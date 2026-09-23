@@ -223,17 +223,17 @@ export default function FrameHero() {
       {/* BOTTOM CENTER INITIAL SCROLL PROMPT */}
       <div
         ref={initialCenterRef}
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 z-20 flex flex-col items-center gap-2 pointer-events-none p-4"
+        className="absolute bottom-4 sm:bottom-8 left-1/2 -translate-x-1/2 z-20 flex flex-col items-center gap-2 pointer-events-none p-2 sm:p-4 w-full max-w-sm sm:max-w-md text-center"
       >
-        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/95 backdrop-blur-md border border-stone-200/90 shadow-xl text-xs font-medium text-stone-800">
-          <TreePine className="w-4 h-4 text-emerald-700" />
-          <span>600+ Acre Resort-Style Holiday Home Township &bull; Jim Corbett</span>
+        <div className="inline-flex items-center gap-1.5 sm:gap-2 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full bg-white/95 backdrop-blur-md border border-stone-200/90 shadow-xl text-[11px] sm:text-xs font-medium text-stone-800">
+          <TreePine className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-emerald-700 shrink-0" />
+          <span className="truncate">600+ Acre Resort-Style Township &bull; Corbett</span>
         </div>
 
         <div className="flex flex-col items-center gap-2 animate-bounce mt-1">
-          <div className="px-5 py-2.5 rounded-full bg-emerald-900 text-amber-200 shadow-2xl text-xs font-semibold tracking-wider uppercase flex items-center gap-2 border border-emerald-700/50">
-            <span>Scroll Down to Enter the Forest</span>
-            <ChevronDown className="w-4 h-4 text-amber-300" />
+          <div className="px-4 sm:px-5 py-2 sm:py-2.5 rounded-full bg-emerald-900 text-amber-200 shadow-2xl text-[10px] sm:text-xs font-semibold tracking-wider uppercase flex items-center gap-1.5 sm:gap-2 border border-emerald-700/50">
+            <span>Scroll Down to Enter</span>
+            <ChevronDown className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-amber-300" />
           </div>
         </div>
       </div>
@@ -241,59 +241,59 @@ export default function FrameHero() {
       {/* CENTER HERO CONTENT — Revealed and stays STUCK/PINNED at the END of frames */}
       <div
         ref={endHeroCenterRef}
-        className="absolute inset-0 z-30 flex items-center justify-center p-4 sm:p-6 md:p-8 opacity-0 pointer-events-auto"
+        className="absolute inset-0 z-30 flex items-center justify-center p-3 sm:p-6 md:p-8 opacity-0 pointer-events-auto overflow-y-auto"
       >
-        <div className="max-w-4xl mx-auto text-center flex flex-col items-center bg-white/95 backdrop-blur-xl rounded-3xl p-6 sm:p-8 md:p-10 border border-white/80 shadow-[0_20px_50px_rgba(0,0,0,0.25)]">
+        <div className="w-full max-w-4xl mx-auto text-center flex flex-col items-center bg-white/95 backdrop-blur-xl rounded-2xl sm:rounded-3xl p-5 sm:p-8 md:p-10 border border-white/80 shadow-[0_20px_50px_rgba(0,0,0,0.25)] my-auto max-h-[92vh] overflow-y-auto">
           {/* 50% OFF scheme highlight pill */}
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-amber-500/20 border border-amber-500/40 text-amber-950 text-xs font-bold mb-4 shadow-sm">
-            <Tag className="w-3.5 h-3.5 text-amber-800 fill-amber-800" />
+          <div className="inline-flex items-center gap-1.5 sm:gap-2 px-3 sm:px-4 py-1 sm:py-1.5 rounded-full bg-amber-500/20 border border-amber-500/40 text-amber-950 text-[10px] sm:text-xs font-bold mb-2.5 sm:mb-4 shadow-sm">
+            <Tag className="w-3 h-3 sm:w-3.5 sm:h-3.5 text-amber-800 fill-amber-800 shrink-0" />
             <span className="tracking-wide">SPECIAL EVENT OFFER &bull; 50% OFF*</span>
           </div>
 
           {/* Main Requested Heading in Center */}
           <h1
             style={{ WebkitTextStroke: "1px #004433", textShadow: "0 2px 10px rgba(0,68,51,0.3)" }}
-            className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-medium text-[#ebd197] leading-[1.18] tracking-tight font-serif mb-4"
+            className="text-xl sm:text-4xl md:text-5xl lg:text-6xl font-medium text-[#ebd197] leading-[1.18] tracking-tight font-serif mb-2.5 sm:mb-4"
           >
             “Exclusive 50% OFF* on Selected Plots”
           </h1>
 
           {/* Subtitle & Key Township Specs */}
-          <p className="text-sm sm:text-base md:text-lg text-stone-700 max-w-2xl font-normal leading-relaxed mb-6">
-            Casa Corbett is a <strong>600+ acre</strong> resort-style holiday home township near Jim Corbett, Ramnagar. Special Event Offer plots from <strong>500 to 1000 Sq. Yards</strong> designed for serene weekend living and nature-immersed luxury.
+          <p className="text-xs sm:text-base md:text-lg text-stone-700 max-w-2xl font-normal leading-relaxed mb-4 sm:mb-6">
+            Casa Corbett is a <strong>600+ acre</strong> resort-style holiday home township near Jim Corbett, Ramnagar. Special Event Offer plots from <strong>500 to 1000 Sq. Yards</strong> designed for serene weekend living.
           </p>
 
           {/* Event Offer Card & CTAs */}
-          <div className="w-full max-w-2xl bg-stone-50 border border-stone-200 rounded-2xl p-4 sm:p-5 shadow-inner mb-5">
-            <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
-              <div className="text-left space-y-1">
-                <div className="flex items-center gap-1.5 text-xs font-semibold text-emerald-900">
-                  <Calendar className="w-4 h-4 text-emerald-700" />
-                  <span>Exclusive Launch Event: 11 October 2026</span>
+          <div className="w-full max-w-2xl bg-stone-50 border border-stone-200 rounded-xl sm:rounded-2xl p-3.5 sm:p-5 shadow-inner mb-3.5 sm:mb-5">
+            <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-3 sm:gap-4">
+              <div className="text-center sm:text-left space-y-1">
+                <div className="flex items-center justify-center sm:justify-start gap-1.5 text-[11px] sm:text-xs font-semibold text-emerald-900">
+                  <Calendar className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-emerald-700 shrink-0" />
+                  <span>Launch Event: 11 October 2026</span>
                 </div>
-                <div className="flex items-center gap-1.5 text-xs text-stone-600">
-                  <MapPin className="w-4 h-4 text-stone-500" />
+                <div className="flex items-center justify-center sm:justify-start gap-1.5 text-[11px] sm:text-xs text-stone-600">
+                  <MapPin className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-stone-500 shrink-0" />
                   <span>Holiday Inn, Mayur Vihar, Delhi</span>
                 </div>
               </div>
 
               <a
                 href="#event-pass"
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-emerald-900 hover:bg-emerald-950 text-amber-200 text-sm font-semibold tracking-wide shadow-md transition-all hover:scale-105 active:scale-95 whitespace-nowrap"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 sm:px-6 py-2.5 sm:py-3 rounded-xl bg-emerald-900 hover:bg-emerald-950 text-amber-200 text-xs sm:text-sm font-semibold tracking-wide shadow-md transition-all hover:scale-105 active:scale-95 whitespace-nowrap"
               >
                 <span>Claim 50% Event Pass</span>
-                <ArrowRight className="w-4 h-4" />
+                <ArrowRight className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
               </a>
             </div>
           </div>
 
           {/* Small Feature Footnote */}
-          <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-8 text-xs font-medium text-stone-600">
+          <div className="flex flex-wrap items-center justify-center gap-2.5 sm:gap-8 text-[11px] sm:text-xs font-medium text-stone-600">
             <span className="flex items-center gap-1.5">
-              <ShieldCheck className="w-4 h-4 text-emerald-700" /> Freehold Plots (500–1000 Sq. Yards)
+              <ShieldCheck className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-emerald-700 shrink-0" /> Freehold Plots (500–1000 Sq. Yards)
             </span>
             <span className="flex items-center gap-1.5">
-              <Sparkles className="w-4 h-4 text-amber-600" /> Resort Clubhouse &amp; 5-Star Amenities
+              <Sparkles className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-amber-600 shrink-0" /> Resort Clubhouse &amp; 5-Star Amenities
             </span>
           </div>
         </div>
