@@ -87,6 +87,21 @@ export default function Features() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     setSubmitted(true);
+
+    const whatsappNumber = "919971172574";
+    const text = `*New Event Registration - Casa Corbett*\n\n` +
+      `*Name:* ${formData.name}\n` +
+      `*Phone:* ${formData.phone}\n` +
+      `*Email:* ${formData.email}\n` +
+      `*Plot Size:* ${formData.plotSize}\n` +
+      `*Preferred Slot:* ${formData.preferredTime}\n\n` +
+      `I'd like to claim my 50% OFF Event Invite!`;
+
+    const encodedText = encodeURIComponent(text);
+    const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodedText}`;
+
+    // Open WhatsApp in a new tab/window
+    window.open(whatsappUrl, "_blank");
   };
 
   return (
@@ -363,7 +378,7 @@ export default function Features() {
                     </div>
                     <h3 className="text-2xl font-serif font-medium text-emerald-950">Pass Reserved!</h3>
                     <p className="text-sm text-stone-600 leading-relaxed max-w-sm">
-                      Thank you! Our private wealth manager will connect shortly with your confirmed event pass for <strong>11 October 2026</strong> at Holiday Inn, Delhi.
+                      Thank you! Our Team will connect shortly with your confirmed event pass for <strong>11 October 2026</strong> at Holiday Inn, Delhi.
                     </p>
                   </div>
                 ) : (

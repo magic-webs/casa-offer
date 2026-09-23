@@ -22,6 +22,14 @@ export const metadata: Metadata = {
   title: "Casa Corbett | 50% OFF* Exclusive 500–1000 Sq. Yards Plot Scheme",
   description:
     "600+ Acre resort-style holiday home township near Jim Corbett, Ramnagar. Special Event Offer: 50% OFF* on 11 October 2026 at Holiday Inn, Mayur Vihar, Delhi.",
+  icons: {
+    icon: [
+      { url: "/favicon.png", type: "image/png" },
+      { url: "/favicon.ico" },
+    ],
+    shortcut: "/favicon.png",
+    apple: "/favicon.png",
+  },
 };
 
 export default function RootLayout({
