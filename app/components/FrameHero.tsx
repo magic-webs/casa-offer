@@ -255,7 +255,7 @@ export default function FrameHero() {
             style={{ WebkitTextStroke: "1px #004433", textShadow: "0 2px 10px rgba(0,68,51,0.3)" }}
             className="text-xl sm:text-4xl md:text-5xl lg:text-6xl font-medium text-[#ebd197] leading-[1.18] tracking-tight font-serif mb-2.5 sm:mb-4"
           >
-            “Exclusive 50% OFF* on Selected Plots”
+            “Exclusive 50% OFF* on Premium Plots”
           </h1>
 
           {/* Subtitle & Key Township Specs */}

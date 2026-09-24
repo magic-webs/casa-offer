@@ -119,7 +119,7 @@ export default function Features() {
                 <span>Limited Event Only Pricing</span>
               </div>
               <h2 className="text-2xl sm:text-4xl md:text-5xl font-light font-serif text-white tracking-tight leading-snug sm:leading-tight">
-                Exclusive 50% OFF* On Selected Plots
+                Exclusive 50% OFF* On Premium Plots
               </h2>
               <p className="text-stone-300 text-xs sm:text-base font-light max-w-2xl leading-relaxed">
                 Join us for the premier event of <strong>Casa Corbett</strong>. Secure your dream holiday home plot at unprecedented 50% discount* rates available strictly during the single-day launch event in Delhi.
@@ -132,7 +132,7 @@ export default function Features() {
                 </div>
                 <div className="flex items-center gap-1.5 sm:gap-2 px-3 sm:px-3.5 py-1.5 sm:py-2 rounded-xl bg-white/10 backdrop-blur-md border border-white/15 text-[11px] sm:text-xs text-stone-200">
                   <MapPin className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-emerald-400 shrink-0" />
-                  <span>Holiday Inn, Delhi</span>
+                  <span>Holiday Inn, Mayur Vihar, Delhi</span>
                 </div>
                 <div className="flex items-center gap-1.5 sm:gap-2 px-3 sm:px-3.5 py-1.5 sm:py-2 rounded-xl bg-white/10 backdrop-blur-md border border-white/15 text-[11px] sm:text-xs text-stone-200">
                   <Clock className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-amber-300 shrink-0" />

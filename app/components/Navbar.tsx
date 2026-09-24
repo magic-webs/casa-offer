@@ -9,8 +9,8 @@ export default function Navbar() {
           Special Event Offer
         </span>
         <span className="leading-tight">
-          <strong>50% OFF*</strong> on Selected Plots &bull; Exclusive Launch Event on{" "}
-          <span className="underline font-semibold">11 Oct 2026</span> at Holiday Inn, Delhi
+          <strong>50% OFF*</strong> on Premium Plots &bull; Exclusive Launch Event on{" "}
+          <span className="underline font-semibold">11 Oct 2026</span> at Holiday Inn, Mayur Vihar, Delhi
         </span>
         <a
           href="#event-pass"
